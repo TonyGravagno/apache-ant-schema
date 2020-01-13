@@ -2844,11 +2844,6 @@
           torefid CDATA #IMPLIED
           refid CDATA #IMPLIED>
 
-<!ELEMENT target EMPTY>
-<!ATTLIST target
-          id ID #IMPLIED
-          name CDATA #IMPLIED>
-
 <!ELEMENT hostinfo EMPTY>
 <!ATTLIST hostinfo
           id ID #IMPLIED

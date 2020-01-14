@@ -3271,10 +3271,10 @@
           description CDATA #IMPLIED
           passive %boolean; #IMPLIED
           newer %boolean; #IMPLIED
-          serverlanguagecodeconfig ( | da | de | en | es | fr | it | nl | no | pt | ro | sh | sk | sl | sq | sv) #IMPLIED
+          serverlanguagecodeconfig ( NULL | da | de | en | es | fr | it | nl | no | pt | ro | sh | sk | sl | sq | sv) #IMPLIED
           servertimezoneconfig CDATA #IMPLIED
           listing CDATA #IMPLIED
-          timestampgranularity ( | MINUTE | NONE) #IMPLIED
+          timestampgranularity ( NULL | MINUTE | NONE) #IMPLIED
           systemtypekey CDATA #IMPLIED
           depends %boolean; #IMPLIED
           sitecommand CDATA #IMPLIED

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project default="test" xmlns="https://ant.apache.org/improved-schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://ant.apache.org/improved-schema ant.xsd">
+  <!-- 
+  Prior to enhancements:
+  - With no schema there was no validation.
+  - With a default schema, the Telnet task was valid but not its sub-tasks.
+  - With the latest schema including commons-net, the read and write tasks validate.
+  -->
+  <telnet server="foo">
+    <read id="fromTelnet"></read>
+    <write>ToTelnet</write>
+  </telnet>
+  <!-- 
+  The valid values for the serverlangcodeconfig attribute are defined in
+  an enumeration which is now displayed after pressing the = sign.
+  While NULL is not a valid value and empty string "" is, the XSD would
+  not validate a NmToken with an empty string value. Change the "NULL"
+  value below to "" and an error/warning is flagged by the IDE.
+  -->
+  <ftp serverlanguagecodeconfig="NULL" />
+</project>

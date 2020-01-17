@@ -7973,6 +7973,7 @@
       <xs:attribute name="id" type="xs:ID" />
       <xs:attribute name="taskname" type="xs:string" />
       <xs:attribute name="description" type="xs:string" />
+      <xs:attribute name="property" type="xs:string" />
     </xs:complexType>
   </xs:element>
   <xs:element name="isfalse">

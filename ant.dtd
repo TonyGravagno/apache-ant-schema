@@ -2189,7 +2189,10 @@
 <!ATTLIST condition
           id ID #IMPLIED
           taskname CDATA #IMPLIED
-          description CDATA #IMPLIED>
+          description CDATA #IMPLIED
+          property CDATA #IMPLIED
+          value CDATA #IMPLIED
+          else CDATA #IMPLIED>
 
 <!ELEMENT isfalse EMPTY>
 <!ATTLIST isfalse

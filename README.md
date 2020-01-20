@@ -5,13 +5,7 @@ I've been really surprised that its so hard to find DTD and XSD for Apache Ant. 
 
 I'm no expert on this stuff, no guru with DTD or XSD. I'm just another developer who happens to be using Ant for one project. I'm sharing what I've done with this in the hope that it will help others.
 
-As of this moment, this repo is designed to have only a few files:
-
-- A small Ant XML file to generate DTD.
-- The resulting DTD.
-- XSD created from that DTD.
-
-From there I'll manually modify any of these to make it more complete, and explain what I'm doing in the repo wiki.
+As of this moment, this repo is designed to have only a few files. See the wiki for details on each file, and Issues for reasons why the files are changed.
 
 Please post questions and suggestions as Issues, as well as PRs for enhancements and fixes.
 

@@ -193,7 +193,7 @@
   </xs:element>
   <xs:element name="attribute">
     <xs:complexType>
-<xs:attribute name="description" type="xs:string" /><xs:attribute name="id" type="xs:ID" />
+<xs:attribute name="description" type="xs:string" /><xs:attribute name="id" type="xs:ID" /><xs:attribute name="name" type="xs:string" /><xs:attribute name="value" type="xs:string" />
     </xs:complexType>
   </xs:element>
   <xs:element name="attributenamespacedef">
@@ -5951,7 +5951,8 @@
   </xs:element>
   <xs:element name="size">
     <xs:complexType>
-<xs:attribute name="description" type="xs:string" /><xs:attribute name="error" type="xs:string" /><xs:attribute name="id" type="xs:ID" /><xs:attribute name="refid" type="xs:IDREF" /><xs:attribute name="units">
+<xs:attribute name="description" type="xs:string" /><xs:attribute name="value" type="xs:string" /><xs:attribute name="error" type="xs:string" /><xs:attribute name="id" type="xs:ID" /><xs:attribute name="refid" type="xs:IDREF" />
+<xs:attribute name="units">
    <xs:simpleType>
           <xs:restriction base="xs:NMTOKEN">
             <xs:enumeration value="g" />
@@ -5993,7 +5994,7 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:attribute>
-<xs:attribute name="value" type="xs:string" /><xs:attribute name="when">
+<xs:attribute name="when">
    <xs:simpleType>
           <xs:restriction base="xs:NMTOKEN">
             <xs:enumeration value="eq" />

@@ -52,7 +52,7 @@
   </xs:element>
   <xs:element name="ant">
     <xs:complexType>
-<xs:attribute name="antfile" type="xs:string" /><xs:attribute name="destfile" type="xs:string" /><xs:attribute name="id" type="xs:ID" /><xs:attribute name="target" type="xs:string" />
+<xs:attribute name="antfile" type="xs:string" /><xs:attribute name="destfile" type="xs:string" /><xs:attribute name="dir" type="xs:string" /><xs:attribute name="id" type="xs:ID" /><xs:attribute name="inheritAll" type="antboolean" /><xs:attribute name="target" type="xs:string" />
     </xs:complexType>
   </xs:element>
   <xs:element name="antcall">
@@ -872,6 +872,7 @@
         <xs:element ref="filterchain" />
         <xs:element ref="filterset" />
         <xs:element ref="mapper" />
+        <xs:element ref="zipfileset" />
       </xs:choice>
 <xs:attribute name="description" type="xs:string" /><xs:attribute name="enablemultiplemappings" type="antboolean" /><xs:attribute name="encoding" type="xs:string" /><xs:attribute name="failonerror" type="antboolean" /><xs:attribute name="file" type="xs:string" /><xs:attribute name="filtering" type="antboolean" /><xs:attribute name="flatten" type="antboolean" /><xs:attribute name="force" type="antboolean" /><xs:attribute name="granularity" type="xs:string" /><xs:attribute name="id" type="xs:ID" /><xs:attribute name="includeemptydirs" type="antboolean" /><xs:attribute name="outputencoding" type="xs:string" /><xs:attribute name="overwrite" type="antboolean" /><xs:attribute name="preservelastmodified" type="antboolean" /><xs:attribute name="quiet" type="antboolean" /><xs:attribute name="taskname" type="xs:string" /><xs:attribute name="todir" type="xs:string" /><xs:attribute name="tofile" type="xs:string" /><xs:attribute name="verbose" type="antboolean" />
     </xs:complexType>
